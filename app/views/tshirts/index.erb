@@ -1,0 +1,12 @@
+<h1>These are my tshirts buy them</h1>
+
+<ul id='tshirts'>
+  <% @tshirts.each do |tshirt| %>
+    <li class='tshirt'>
+      <%= tshirt.name %>
+      <span class='price'>
+        <%= "%.2f" % tshirt.price %>
+      </span>
+    </li>
+  <% end %>
+</ul>

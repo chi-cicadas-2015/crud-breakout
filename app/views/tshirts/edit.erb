@@ -1,0 +1,7 @@
+<h1>Edit this shirt yo</h1>
+
+<form method="POST" action="/tshirts/<%= @tshirt.id %>">
+  <input type="hidden" name="_method" value="PUT" />
+
+  <%= erb :"tshirts/_form" %>
+</form>

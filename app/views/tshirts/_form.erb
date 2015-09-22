@@ -1,0 +1,10 @@
+<% if @tshirt.errors %>
+  <%= @tshirt.errors.full_messages.join(",\n") %>
+<% end %>
+
+<input type="text" name="tshirt[name]" value="<%= @tshirt.name %>" placeholder='Name'/>
+<input type="text" name="tshirt[size]" value="<%= @tshirt.size %>" placeholder='Size'/>
+<input type="text" name="tshirt[color]" value="<%= @tshirt.color %>" placeholder='Color'/>
+<input type="text" name="tshirt[price]" value="<%= @tshirt.price %>" placeholder='Price'/>
+
+<input type="submit" />
